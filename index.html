@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BMI Calculator</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-dark text-white">
+
+    <div
+      style="height: 50vh;"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <div class="border p-5 d-flex flex-column gap-4">
+
+        <h1 class="text-center">BMI Calculator</h1>
+
+        <input
+          id="weightinput"
+          placeholder="Enter weight (kg)"
+          type="number"
+          class="form-control"
+        />
+
+        <input
+          id="heightinput"
+          placeholder="Enter height (cm)"
+          type="number"
+          class="form-control"
+        />
+
+        <button
+          id="calculateBtn"
+          onclick="onCalculateBtnClick()"
+          class="btn btn-outline-light"
+        >
+          Calculate
+        </button>
+
+      </div>
+    </div>
+
+    <div
+      style="width: 300px;"
+      class="border p-5 m-4 d-flex flex-column gap-4"
+    >
+
+      <h2>BMI: No input</h2>
+
+      <h3>Status: No input</h3>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+  </body>
+</html>
